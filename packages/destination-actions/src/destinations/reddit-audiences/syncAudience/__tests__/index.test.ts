@@ -102,7 +102,7 @@ const segmentEventEmailOnly: Partial<SegmentEvent> = {
 const expectedPayloadMaidOnly = {
   data: {
     column_order: ['MAID_SHA256'],
-    user_data: [['ed7bcb5e3573c63a42ac5ccca3a1ef37412e7d6229332493c6caaeeb8f9abccb']],
+    user_data: [['a02295b5eec5bff1e9441d074f93b5e82302eb7e9e82c43e55fef9cf0c4d75f3']],
     action_type: 'ADD'
   }
 }
@@ -118,7 +118,7 @@ const segmentEventMaidOnly: Partial<SegmentEvent> = {
     }
   },
   traits: {
-    android_idfa: 'test_idfa',
+    ios_idfa: 'AB1234CD-E123-12FG-J123',
     test_audience_name: true
   }
 }
