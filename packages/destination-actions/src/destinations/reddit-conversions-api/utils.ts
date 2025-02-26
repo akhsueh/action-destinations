@@ -114,7 +114,17 @@ function getMetadata(
 function getAdId(device_type?: string, advertising_id?: string): { [key: string]: string | undefined } | undefined {
   if (!device_type) return undefined
   if (!advertising_id) return undefined
-  return device_type === 'ios' ? { idfa: hash(advertising_id) } : { aaid: hash(advertising_id) }
+  return device_type === 'ios'
+    ? { idfa: hash(normalizeIdfa(advertising_id)) }
+    : { aaid: hash(normalizeAaid(advertising_id)) }
+}
+
+function normalizeAaid(aaid: string) {
+  return aaid.toLowerCase()
+}
+
+function normalizeIdfa(idfa: string) {
+  return idfa.toUpperCase()
 }
 
 function getDataProcessingOptions(
@@ -173,4 +183,3 @@ const hash = (value: string | undefined): string | undefined => {
   hash.update(value)
   return hash.digest('hex')
 }
-

@@ -24,7 +24,7 @@ Object {
         "tracking_type": "Custom",
       },
       "user": Object {
-        "aaid": "7b1d43d3d43059efd3e755045cf79aa9a554bc456f4c10d1915ccb5d79345b4a",
+        "aaid": "222afd9a8f36ee1f45806d3e74b7115755dc2a22036d0864616ff88b0e7c27b9",
         "data_processing_options": Object {
           "country": "VN",
           "modes": Array [

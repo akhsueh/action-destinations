@@ -23,7 +23,7 @@ Object {
         "tracking_type": "SignUp",
       },
       "user": Object {
-        "aaid": "7da4d4522d67f6ca1c1b0654c2d91c916a22667a5d34fa75c7cdcbe0c1b452ce",
+        "aaid": "17c0854525a0c8eda21d43e1149398e96439287033f97a75a48fc9eb6e71c9d4",
         "data_processing_options": Object {
           "country": "WF",
           "modes": Array [
